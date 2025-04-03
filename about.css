@@ -1,0 +1,134 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(rgba(0,0,0.5,0.8),rgba(0,0,0.5,0.5)),url(./image/foto1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.about-me{
+  width: 1140px;
+  margin: 80px auto;
+}
+.card{
+  border: 1px solid blue;
+  margin-top: 20px;
+  width: 350px;
+  padding: 30px 20px 40px;
+}
+.start-msg p{
+  padding: 0 200px 0;
+  color: wheat;
+}
+.start-msg h1{
+  font-size: 50px;
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.all-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  
+}
+.education{
+  background-color: gray;
+  color: white;
+}
+.country{
+  background-color: gray;
+  color: white;
+}
+.hobbies{
+  background-color: gray;
+  color: white;
+}
+.education.country.hobbies, h3{
+ color: black;
+}
+
+.education.country, h5{
+  color: rgb(86, 7, 7);
+}
+
+
+.title{
+  display: flex;
+  align-items: center;
+}
+.title img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.education p{
+  margin-top: 10px;
+}
+button{
+  padding: 20px;
+  border-radius: 20px;
+  border: 0;
+  margin-top: 30px;
+  background-color: #eaeaea;
+  width: 90px;
+
+}
+button a{
+ text-decoration: none;
+}
+button:hover{
+  background-color: blue;
+  color: white;
+}
+.email{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  
+}
+.whatsapp{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  margin-top: 3px;
+}
+.email i{
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.whatsapp i{
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.contact-info p{
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+@media(max-width:900px){
+  .all-card{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .start-msg p{
+    padding: 0;
+  }
+  .start-msg{
+    padding:  70px;
+    text-align: center;
+  }
+  .about-me{
+    width: auto;
+  }
+}
